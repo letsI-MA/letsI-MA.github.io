@@ -2,6 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/* 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #555555;
+    --secondary-color: #6c757d;
+    --hover-color: #FF8800;
+    --border-color: #dee2e6;
+}
+
+.dark-mode {
+    --bg-color: #212529;
+    --text-color: #ffffff;
+    --primary-color: #555555;
+    --secondary-color: #6c757d;
+    --hover-color: #FF8800;
+    --border-color: #323130;
+}
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -59,9 +79,10 @@ a:hover {
 .logo {
     font-size: 2rem;
     text-decoration: underline;
+    text-decoration-style: double;
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(255, 136, 0);
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
 }
 
 .logo.hover {
@@ -194,12 +215,21 @@ section {
     margin-bottom: 1rem;
 }
 
-.title {
+.name {
     font-size: 3rem;
     text-align: center;
 }
 
-#socials-conatiner {
+.title {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(255, 136, 0);
+    text-decoration-thickness: 3px;
+}
+
+#socials-container {
     display:flex;
     justify-content: center;
     margin-top: 1rem;
@@ -208,11 +238,17 @@ section {
 
 /* Icons */
 
-.icon {
+.icon, .socials-icon {
     cursor: pointer;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
     height: 2rem;
+}
+
+.icon:hover, .socials-icon:hover {
+    color: rgb(255, 136, 0);
+}
+
+.socials-icon {
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 /* Buttons */
@@ -345,7 +381,7 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     gap: 0.5rem;
 
 }
